@@ -49,7 +49,7 @@ public class Course {
     return program;
   }
 
-  public void setDepartment(Program department) {
+  public void setProgram(Program program) {
     this.program = program;
   }
 
@@ -79,8 +79,7 @@ public class Course {
 
   public void printCourseInfo() {
     System.out.println(id + ". " + name + " (" + creditHours + " Hours)");
-    System.out.println(description);
-    System.out.println("This course is part of " + program.getName());
+    // System.out.println(description);
   }
 
 }

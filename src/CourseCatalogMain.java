@@ -1,31 +1,24 @@
 import model.CourseCatalog;
 import model.Program;
+import model.Course;
 
 public class CourseCatalogMain {
   public static void main(String[] args) throws Exception {
 
-    CourseCatalog nuCourseCatalog = new CourseCatalog("2022-2023");
-    Program informationSystems = new Program("Information Systems Program");
+    Program msisBridge = new Program("Masters of Information Systems", "Prof. Bugrara");
 
-    nuCourseCatalog.addNewCourse("INFO 5001", "Application Modeling and Design",
-        "Practices social-technical software engineering methods and tools to solve real-world problems. Explores innovative design and programming techniques ...",
-        informationSystems, true, 4);
+    CourseCatalog msisBridgeCatalog = msisBridge.getCourseCatalog();
 
-    nuCourseCatalog.addNewCourse("INFO 5100", "Application Engineering & Development",
-        "Introduces the concepts and skills necessary to design, develop, and deploy applications using a contemporary framework. ...",
-        informationSystems, true, 4);
+    Course info5001 = msisBridgeCatalog.createNewCourse("Info5001", "Applications Modeling & Design", "We learn Java basics and modeling here", true, 4);
+    Course info5002 = msisBridgeCatalog.createNewCourse("Info5002", "Introduction to Python", "Learn basics of Python", true, 4);
 
-    nuCourseCatalog.addNewCourse("INFO 5002", "Introduction to Python for Information Systems",
-        "Introduces the Python programming language and its use in information systems. Covers the basics of Python programming ...",
-        informationSystems, true, 4);
+    Course info6150 = msisBridgeCatalog.createNewCourse("Info6150", "Web Design and Engineering", "Introduction to Frontend", false, 4);
+    Course info6250 = msisBridgeCatalog.createNewCourse("Info6250", "Enterprise Web", "How to build web backend", false, 4);
 
-    System.out.println("-----------------");
+    msisBridgeCatalog.deleteCourse("Info6150");
 
-    nuCourseCatalog.printCourseCatalog();
+    msisBridge.printProgramDetails();
 
-    // use UpperCamerCase letter for class name
-    // use lowerCamelCase for variable name and method name
-    // use lowercase for package name
 
   }
 }
