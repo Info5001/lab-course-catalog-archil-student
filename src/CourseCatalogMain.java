@@ -7,13 +7,8 @@ public class CourseCatalogMain {
     CourseCatalog nuCourseCatalog = new CourseCatalog("2022-2023");
     Program informationSystems = new Program("Information Systems Program");
 
-    nuCourseCatalog.addNewCourse("INFO 5001", "Application Modeling and Design",
-        "Practices social-technical software engineering methods and tools to solve real-world problems. Explores innovative design and programming techniques ...",
-        informationSystems, true, 4);
 
-    nuCourseCatalog.addNewCourse("INFO 5100", "Application Engineering & Development",
-        "Introduces the concepts and skills necessary to design, develop, and deploy applications using a contemporary framework. ...",
-        informationSystems, true, 4);
+    df;oajdsfkadsl;fkalsd;kf;lasdkf;lads
 
     nuCourseCatalog.addNewCourse("INFO 5002", "Introduction to Python for Information Systems",
         "Introduces the Python programming language and its use in information systems. Covers the basics of Python programming ...",
